@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./todo.css" />
+    <link rel="stylesheet" href="./task.css" />
+  </head>
+  <body>
+    <button id="addTaskButton">Add task</button>
+
+    <div class="container">
+      <div class="box">
+        <div class="head">
+          <div class="dugui" id="saaral"></div>
+          <span class="Situation">To do</span>
+          <div class="total_note1">5</div>
+        </div>
+        <div class="tasks_container" id="todo_tasks_box"></div>
+      </div>
+
+      <div class="box">
+        <div class="head">
+          <div class="dugui" id="shar"></div>
+          <span class="Situation">In progress</span>
+          <div class="total_note1">5</div>
+        </div>
+        <div class="tasks_container" id="inprogress_tasks_box"></div>
+      </div>
+
+      <div class="box">
+        <div class="head">
+          <div class="dugui" id="nogoon"></div>
+          <span class="Situation">Done</span>
+          <div class="total_note1">5</div>
+        </div>
+        <div class="tasks_container" id="done_tasks_box"></div>
+      </div>
+
+      <div class="box">
+        <div class="head">
+          <div class="dugui" id="ulaan"></div>
+          <span class="Situation">Blocked</span>
+          <div class="total_note1">5</div>
+        </div>
+        <div class="tasks_container" id="blocked_tasks_box"></div>
+      </div>
+    </div>
+
+    <div class="dialog_container">
+      <div class="dialog">
+        <div class="enter_task">Enter task</div>
+        <input
+          class="task_oruulah"
+          id="task_oruulah"
+          type="text"
+          placeholder="Task name..."
+        />
+        <select
+          class="taskiin_turul_songoh"
+          id="taskiin_turul_songoh"
+          placeholder="Select status"
+        >
+          <option value="todo">To do</option>
+          <option value="inprogress">In progress</option>
+          <option value="done">Done</option>
+          <option value="blocked">Blocked</option>
+        </select>
+        <button id="submit_button">Submit</button>
+      </div>
+    </div>
+
+    <script src="./todo.js"></script>
+  </body>
+</html>
